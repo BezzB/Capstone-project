@@ -1,0 +1,54 @@
+/* Apply a box model to all elements */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color for the page */
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Set the font for the entire page */
+  body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Create a header that spans the entire width of the page */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Create a navigation bar using Flexbox */
+  nav {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  /* Style the links in the navigation bar */
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Create a main content area using Flexbox */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Style the articles in the main content area */
+  article {
+    background-color: #fff;
+    border: 1px solid #ddd
+  
