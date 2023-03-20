@@ -7,13 +7,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFFFFF;
-  padding: 10px;
-  font-style: lato; 
+  background-color: #fff;
+  font-style: lato;
   top: 30px;
-  border-radius: 0px;
-  padding: 0px 198px 0px 25px;
-
+  border-radius: 0;
+  padding: 0 198px 0 25px;
 }
 
 .navbar-logo {
@@ -48,7 +46,6 @@ nav ul li:first-child {
 
 nav ul li a {
   color: #868686;
-  ;
   text-decoration: none;
   font-size: 16px;
 }
