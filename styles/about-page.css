@@ -1,0 +1,139 @@
+.about-page {
+    text-align: center;
+    padding: 10% 0;
+    background-color: #282B32;
+    color: #f0f0f0
+    ;
+  }
+  .containers{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 10%;  
+  height: 100%;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    width: 13%;
+    margin: 0 0%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+    max-height: 20%;
+    background: #3B3E45;
+
+  }
+
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:#F75916;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .button {
+    margin-top: 30px;
+  }
+  .button a {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .button a:hover {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  .hr{
+    color: #F75916;
+    border-color: #F75916;
+    width: 20%;
+    align-items: center;
+  }
+  .icons {
+    width: 30px; 
+    height: auto; 
+  }
+
+  /* start of featured artists section */
+ 
+/* CSS code */
+.featured-artists {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .artists-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -20px;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+  }
+  
+  .artist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    width: calc(100% / 3 - 40px);
+    margin-bottom: 40px;
+  }
+  
+  .portrait {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .prev-btn {
+    left: 20px;
+  }
+  
+  .next-btn {
+    right: 20px;
+  }
+  

@@ -7,9 +7,12 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/toplink.css">
+    <link rel="stylesheet" href="./styles/about-page.css">
+    <link rel="stylesheet" href="./styles/home-page.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Home Page</title>
+    <script src="scripts.js"></script>
 </head>
   <body>
     <header class="header">
@@ -29,6 +32,9 @@
             <a href="English">English</a>
           </li>
           <li> 
+            <a href="Join">Join</a>
+          </li>
+          <li> 
             <a href="Mypage">Mypage</a>
           </li>
           <li> 
@@ -40,23 +46,84 @@
     </header>
     <section class="nav-bar"></section>
     <nav>      
-      <div class="navbar-logo">
+      <a href="#home-page" class="navbar-logo">
         <img src="images\logo-transparent-png.png" alt="Logo">
         <h1>Bezzinc</h1>
-      </div>
+      </a>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#programs">Programs</a></li>
         <li><a href="#jobs">Jobs</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#news">News</a></li>
+        <div class="campaign-name">
+          CC Campaign
+        </div>
       </ul>
      
     </nav>
     
     
-    <section class="home-page"></section>
-   
+    <section class="home-page">
+      <div class="theme"> 
+        <h2>Hello! Art Enthusiats</h2>
+        <h1> ART ENTHUSIASTS GLOBAL EXTRAVAGANZA 2023</h1>        
+      </div>
+      <div class="info">
+        <p>"Art Unleashed": A global art extravaganza campaign showcasing the diverse and vibrant world of contemporary art. From street art to fine art, traditional to avant-garde, this campaign celebrates the power of creativity and encourages everyone to explore and discover the beauty and meaning behind each unique artwork. With exhibits, workshops, and events taking place across the world, "Art Unleashed" invites people to unleash their own creativity and be inspired by the power of art to bring people together and ignite change.</p>
+      </div>
+      <div class="date"> 
+        <h1> 21.04.2023 (THU)~22(FRI)</h1>
+        <p> @ The Oprah-Ampitheatre, Nairobi-Kenya </p>
+           
+      </div>
+
+    </section>
+    <section class="about-page">
+      <h2>Main Event</h2>
+      <hr class="hr">
+      <div class="containers">
+      <div class="container">
+        <img class="icons" src="./images/layers.png" alt="icon1">
+        <h3>Mindiuz Art Gallery</h3>
+        <p> A Haven for Art Lovers. Explore all daily art news from the international art world.</p>
+      </div>
+      <div class="container">
+        <img class="icons" src="./images/mona-lisa.png" alt="icon1">
+        <h3>Un(fair) 2023</h3>
+        <p>The second edition of Un(fair) will open its doors to the public tomorrow, and it will enliven the city of Milan until Sunday.</p>
+      </div>
+      <div class="container">
+        <img class="icons" src="./images/paint-palette.png" alt="icon1">
+        <h3>Forum</h3>
+        <p>Participate in lively and thought-provoking discussions on a range of topics related to art and culture.</p>
+      </div>
+      <div class="container">
+        <img class="icons" src="./images/paint-palettes.png" alt="icon1">
+        <h3>Workshop</h3>
+        <p>Get hands-on experience and learn new techniques in our art workshops, led by expert instructors.</p>
+      </div>
+      <div class="container">
+        <img class="icons" src="./images/paint-palette.png" alt="icon1">
+        <h3>UVNT Art Fair</h3>
+        <p>Celebrating New Contemporary Art in Madrid. Explore all daily art news from the international art world.</p>
+      </div>
+    </div>
+      <div class="button">
+        <a href="#">SEE THE WHOLE PROGRAM</a>
+      </div>
+    </section>
+    <!-- HTML code -->
+<!-- HTML code -->
+<section class="featured-artists">
+  <div class="artists-container">
+    <!-- Artists will be dynamically added here -->
+  </div>
+  <button class="prev-btn">&lt;</button>
+  <button class="next-btn">&gt;</button>
+</section>
+
   </body>
+  
 </html>
 

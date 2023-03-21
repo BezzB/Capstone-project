@@ -3,15 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
+body {
+  margin: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   font-style: lato;
+  height: 57px;
   top: 30px;
   border-radius: 0;
-  padding: 0 198px 0 25px;
+  padding: 0 108px 0 25px;
 }
 
 .navbar-logo {
@@ -52,4 +57,20 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #ff8c00;
+}
+
+nav ul div.campaign-name { 
+  border-style: solid;
+  border-radius: 10%;
+  border-color: #EC4327;
+  margin: 0 0 0 33px;
+  font-family: Lato;
+  color: #EC4327;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+
 }
