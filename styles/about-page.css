@@ -97,12 +97,13 @@
   }
   
   .portrait {
-    width: 55%;
-    height: 100%;
+    width: 50%;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
   }
+  
   
   .name {
     font-size: 1.5rem;
@@ -136,13 +137,17 @@
     right: 20px;
   }
   
-  .featured-artist{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: x-large;
-    margin-left: 40%;
-  }
+  .featured-artist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+  
 
   .sponsors{
     background: #414246;

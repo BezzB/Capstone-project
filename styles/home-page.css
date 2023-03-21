@@ -1,59 +1,89 @@
 
 
 .home-page {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    height: 70%;
-    left: 0px;
-    top: 105px;
-    border-radius: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 5.8;  
-    background-color: transparent;
-
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 70%;
+  left: 0px;
+  top: 105px;
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 5.8;  
+  background-color: transparent;
 }
-      .home-page::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/pexels-aleksandar-pasaric-325185.jpg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        z-index: -1;
-      }
-      .home-page .theme {
-        position: relative;
-        z-index: 1;
-      }    
+
+.home-page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pexels-aleksandar-pasaric-325185.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.home-page .theme {
+  position: relative;
+  z-index: 1;
+  font-style: lato;
+  max-width: 70%;
+  margin-top: 5%;
+  opacity: 2;
+  font-weight: 800;
+  font-size: xx-large;
+  margin-left: 10%;
+  color: #F75916;    
+}
+
+.theme h2 {
+  margin-bottom: 20px;
+}
+
+.info {
+  max-width: 70%;
+  margin-left: 10%;
+}
+
+.date {
+  margin-left: 10%;
+}
+
+/* Media Query for screens larger than 768px */
+@media only screen and (min-width: 768px) {
+  .home-page {
+      height: 100%;
+      top: 0;
+      
     
- 
-  .theme {
-    font-style: lato;
-    max-width: 70%;
-    margin-top: 5%;
-    opacity: 2;
-    font-weight: 800;
-    font-size:xx-large;
-    margin-left: 10%;
-    color: #F75916;    
-
-  }
-
-  .theme h2 {
-    margin-bottom: 20px;
   }
   
-  .info{
-    max-width: 70%;
-    margin-left: 10%;
+  .theme {
+      max-width: 50%;
+      margin-top: 10%;
+      margin-left: 10%;
+      font-size: xx-large;
   }
- .date {
-    margin-left: 10%;
+  
+  .info {
+      max-width: 50%;
+      margin-left: 10%;
+  }
+  
+  .date {
+      margin-left: 10%;
+  }
+}
 
- }
+@media only screen and (max-width: 768px) {
+  .home-page .theme {
+    max-width: 100%;    
+    font-size: small;
+
+    }
+  }

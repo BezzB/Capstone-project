@@ -1,0 +1,17 @@
+@media only screen and (max-width: 767px) {
+    .containers {
+      margin-left: 0;
+    }
+    .container {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+    .featured-artists {
+      padding: 60px 0;
+    }
+    .artist {
+      width: 100%;
+      margin: 0 0 40px 0;
+    }
+  }
+  

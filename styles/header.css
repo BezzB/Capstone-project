@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
+/* base styles */
 body {
   margin: 0;
 }
@@ -59,7 +60,7 @@ nav ul li a:hover {
   color: #ff8c00;
 }
 
-nav ul div.campaign-name { 
+nav ul div.campaign-name {
   border-style: solid;
   border-radius: 10%;
   border-color: #EC4327;
@@ -71,6 +72,47 @@ nav ul div.campaign-name {
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
-
-
 }
+
+/* media queries */
+@media ( max-width: 768px) {
+  /* styles for small screens */
+  nav {
+    padding: 0 25%;   
+    margin-top: -33%;
+    align-items: center;
+    
+    
+  }
+  
+  nav ul li {
+    visibility: hidden;
+    margin-left: 10px;
+  }
+
+  nav ul div.campaign-name {
+    visibility: hidden;
+    margin: 0 0 0 20px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* styles for large screens */
+  nav {
+    padding: 0 190px 0 25px;
+  }
+
+  nav ul li {
+    margin-left: 30px;
+  }
+
+  nav ul div.campaign-name {
+    margin: 0 0 0 40px;
+    font-size: 16px;
+    line-height: 19px;
+
+  }
+}
+
