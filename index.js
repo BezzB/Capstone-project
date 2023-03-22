@@ -1,14 +1,14 @@
 // JavaScript code
 const artists = [
     {
-        name: "John Doe",
+        name: "John Watts",
         portraitUrl: src="../images/speaker1.png",
-        description: "John Doe is a talented artist who specializes in abstract paintings."
+        description: "John Watts is a talented artist who specializes in abstract paintings."
       },
       {
-        name: "Jane Smith",
+        name: "Babra Smith",
         portraitUrl: "../images/speaker2.png",
-        description: "Jane Smith is a contemporary artist who creates immersive installations."
+        description: "Babra Smith is a contemporary artist who creates immersive installations."
       },
       {
         name: "Bob Johnson",
@@ -71,6 +71,9 @@ const artists = [
       portraitElement.src = artist.portraitUrl;
       portraitElement.alt = `${artist.name} Portrait`;
   
+      const infoElement = document.createElement("div"); // create a new div for the artist's name and description
+      infoElement.classList.add("info2");
+  
       const nameElement = document.createElement("h2");
       nameElement.classList.add("name");
       nameElement.textContent = artist.name;
@@ -79,12 +82,15 @@ const artists = [
       descriptionElement.classList.add("description");
       descriptionElement.textContent = artist.description;
   
+      infoElement.appendChild(nameElement); // add the name and description elements to the new info element
+      infoElement.appendChild(descriptionElement);
+  
       artistElement.appendChild(portraitElement);
-      artistElement.appendChild(nameElement);
-      artistElement.appendChild(descriptionElement);
+      artistElement.appendChild(infoElement); // add the new info element to the artist element
       artistsContainer.appendChild(artistElement);
     }
   }
+
   
   function handlePrevBtn() {
     if (startIndex > 0) {

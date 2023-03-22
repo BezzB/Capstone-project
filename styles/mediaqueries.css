@@ -1,17 +1,30 @@
 @media only screen and (max-width: 767px) {
     .containers {
       margin-left: 0;
+     
     }
     .container {
-      width: 100%;
-      margin: 0 0 20px 0;
+      width: 90%;
+      margin: 0 10px 1px 16px;
+      display: flex;
+      flex-direction: row;
+      font-size: medium;
     }
+    .container h3{
+    font-size: 16px;    
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 1%;
+  }
+  .container p{
+    align-content: left;
+  }
     .featured-artists {
       padding: 60px 0;
     }
     .artist {
       width: 100%;
-      margin: 0 0 40px 0;
+      margin: 0 0 40px 64px;
     }
   }
   
