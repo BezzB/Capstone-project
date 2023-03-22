@@ -77,7 +77,15 @@ nav ul div.campaign-name {
 /* media queries */
 @media ( max-width: 768px) {
   /* styles for small screens */
+  .navbar-logo{
+    visibility: hidden;
+  }
+  section.nav-bar{
+visibility: hidden;
+  }
+  
   nav {
+    visibility: hidden;
     padding: 0 25%;   
     margin-top: -33%;
     align-items: center;

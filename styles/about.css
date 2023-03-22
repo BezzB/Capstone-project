@@ -1,0 +1,87 @@
+/* Center the headings and paragraphs */
+.headings{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;   
+    background-image: url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+     background-size: cover;
+}
+.headings div.theme{
+    max-width: 80%;
+
+}
+.headings, .headings p {
+    text-align: center;
+  }
+  
+  /* Style the heading with an orange color */
+  .headings h1 {
+    color: #F75916;
+    margin-left: 8%;
+  }
+  
+  /* Style the info section */
+  .headings div.info {
+    
+    background-color: #F7F7F7;
+    max-width: 80%;
+  }
+  
+  .info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the contact section */
+  .contact-me {
+    background-color: #F0F0F0;
+    padding: 20px;
+    margin-top: 5%;
+  }
+  
+  .contact-me p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .contact-me a {
+    color: #F75916;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .logo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+  }
+
+
+
+
+
+  .footer2 {
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    background: #2E2E2E;
+
+
+  }
+  .footer2 p {
+   margin-top: 5%;
+   color: #F0F0F0;
+   margin-left: 5%;
+
+  }
+  .footer2 img {
+    margin-top: 1%;
+    max-width: 20%;
+    height: auto;
+    margin-left: 8%;
+}
+  
