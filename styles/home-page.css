@@ -79,7 +79,7 @@
    
 
     }
-    .view-more-btn {
+    .view-more {
       background-color: #007bff;
       color: #fff;
       padding: 10px 20px;
@@ -88,7 +88,7 @@
       cursor: pointer;
     }
     
-    .view-more-btn:hover {
+    .view-more:hover {
       background-color: #0062cc;
     }
     
