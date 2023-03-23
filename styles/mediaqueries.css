@@ -43,11 +43,19 @@
     background-color: #f4511e;
   }
 }
+.next-btn{
+  visibility: hidden;
+}
 
+.prev-btn{
+  visibility: hidden;
+}
 @media only screen and (min-width: 767px){
   .button2{
     visibility: hidden;
   }
 }
+
+
   
   

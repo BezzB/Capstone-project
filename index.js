@@ -72,55 +72,61 @@ const artists = [
   let startIndex = 0;
 
  
-
-function displayArtists() {
-  artistsContainer.innerHTML = "";
-  let endIndex;
-  const viewMoreButton = document.createElement("button");
-  viewMoreButton.classList.add("view-more");
-  viewMoreButton.textContent = "View More";
-  viewMoreButton.addEventListener("click", function() {
-    startIndex += 6;
-    displayArtists();
-  });
-  if (window.innerWidth <= 768) { // for mobile devices, display only 2 artists
-    endIndex = startIndex + 2 > artists.length ? artists.length : startIndex + 2;
-  } else {
-    endIndex = startIndex + 6 > artists.length ? artists.length : startIndex + 6;
-  }  
-  for (let i = startIndex; i < endIndex; i++) {
-    const artist = artists[i];
-    const artistElement = document.createElement("div");
-    artistElement.classList.add("artist");
-
-    const portraitElement = document.createElement("img");
-    portraitElement.classList.add("portrait");
-    portraitElement.src = artist.portraitUrl;
-    portraitElement.alt = `${artist.name} Portrait`;
-
-    const infoElement = document.createElement("div"); // create a new div for the artist's name and description
-    infoElement.classList.add("info2");
-
-    const nameElement = document.createElement("h2");
-    nameElement.classList.add("name");
-    nameElement.textContent = artist.name;
-
-    const descriptionElement = document.createElement("p");
-    descriptionElement.classList.add("description");
-    descriptionElement.textContent = artist.description;
-
-    infoElement.appendChild(nameElement); // add the name and description elements to the new info element
-    infoElement.appendChild(descriptionElement);
-
-    artistElement.appendChild(portraitElement);
-    artistElement.appendChild(infoElement); // add the new info element to the artist element
-    artistsContainer.appendChild(artistElement);
+  function displayArtists() {
+    artistsContainer.innerHTML = "";
+    let endIndex;
+    if (window.innerWidth <= 768) { // for mobile devices, display only 2 artists
+      endIndex = startIndex + 2 > artists.length ? artists.length : startIndex + 2;
+    } else {
+      endIndex = startIndex + 6 > artists.length ? artists.length : startIndex + 6;
+    }  
+    for (let i = startIndex; i < endIndex; i++) {
+      const artist = artists[i];
+      const artistElement = document.createElement("div");
+      artistElement.classList.add("artist");
+  
+      const portraitElement = document.createElement("img");
+      portraitElement.classList.add("portrait");
+      portraitElement.src = artist.portraitUrl;
+      portraitElement.alt = `${artist.name} Portrait`;
+  
+      const infoElement = document.createElement("div"); // create a new div for the artist's name and description
+      infoElement.classList.add("info2");
+  
+      const nameElement = document.createElement("h2");
+      nameElement.classList.add("name");
+      nameElement.textContent = artist.name;
+  
+      const descriptionElement = document.createElement("p");
+      descriptionElement.classList.add("description");
+      descriptionElement.textContent = artist.description;
+  
+      infoElement.appendChild(nameElement); // add the name and description elements to the new info element
+      infoElement.appendChild(descriptionElement);
+  
+      artistElement.appendChild(portraitElement);
+      artistElement.appendChild(infoElement); // add the new info element to the artist element
+      artistsContainer.appendChild(artistElement);
+    }
+  
+    const viewMoreButton = document.createElement("button");
+    viewMoreButton.classList.add("view-more");
+    viewMoreButton.textContent = "View More";
+    
+    const downArrow = document.createElement("span");
+    downArrow.innerHTML = "&#9660;"; // Unicode HTML entity for down arrow
+    viewMoreButton.appendChild(downArrow);
+  
+    viewMoreButton.addEventListener("click", () => {
+      startIndex = endIndex;
+      displayArtists();
+    });
+  
+    if (endIndex < artists.length) {
+      artistsContainer.appendChild(viewMoreButton);
+    }
   }
-  if (endIndex < artists.length) {
-    artistsContainer.appendChild(viewMoreButton);
-  }
-}
-
+  
 
   
   function handlePrevBtn() {
