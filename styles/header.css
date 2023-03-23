@@ -77,13 +77,13 @@ nav ul div.campaign-name {
 }
 
 /* Media query for small screens */
- @media (max-width: 767px) {
+@media (max-width: 767px) {
   header{
     visibility: hidden;
   }
   nav {
-    padding: 0 20px;
-    visibility: hidden;
+    padding: 0 158px;
+    margin-top: -19px;
   }
   
   .navbar-logo {
@@ -106,40 +106,37 @@ nav ul div.campaign-name {
     margin: 10px 0;
   }
   
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
     cursor: pointer;
-    z-index: 2;
+    margin-left: -136px;
+    margin-right: 136px ;
   }
   
-  .hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
+  .btn-line {
+    width: 24px;
+    height: 2px;
     background-color: #333;
-    margin: 5px 0;
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease;
   }
   
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  /* Rotate the first and the last line when the button is clicked */
+  .menu-btn.active .btn-line:first-child {
+    transform: rotate(45deg) translate(10px, 11px);
   }
   
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.active span:nth-child(3) {
+  .menu-btn.active .btn-line:last-child {
     transform: rotate(-45deg) translate(5px, -5px);
   }
   
-  nav ul.show {
-    display: flex;
-    flex-direction: column;
+  /* Hide the middle line when the button is clicked */
+  .menu-btn.active .btn-line:nth-child(2) {
+    opacity: 0;
   }
+  
 }
  
 /* Media query for large screens */

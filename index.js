@@ -1,8 +1,20 @@
 // JavaScript code
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
+    menuBtn.classList.add('active');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('active');
+    menuOpen = false;
+  }
+});
+
 const artists = [
     {
         name: "John Watts",
-        portraitUrl: src="../images/speaker1.png",
+        portraitUrl: "../images/speaker1.png",
         description: "John Watts is a talented artist who specializes in abstract paintings."
       },
       {
@@ -56,11 +68,17 @@ const artists = [
   const artistsContainer = document.querySelector(".artists-container");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
+  const viewMoreBtn = document.querySelector(".view-more-btn");
   let startIndex = 0;
-  
+
   function displayArtists() {
     artistsContainer.innerHTML = "";
-    const endIndex = startIndex + 6 > artists.length ? artists.length : startIndex + 6;
+    let endIndex;
+    if (window.innerWidth <= 768) { // for mobile devices, display only 2 artists
+      endIndex = startIndex + 2 > artists.length ? artists.length : startIndex + 2;
+    } else {
+      endIndex = startIndex + 6 > artists.length ? artists.length : startIndex + 6;
+    }  
     for (let i = startIndex; i < endIndex; i++) {
       const artist = artists[i];
       const artistElement = document.createElement("div");
@@ -97,6 +115,16 @@ const artists = [
       startIndex -= 6;
       displayArtists();
     }
+    
+    // Toggle visibility of "View More" button based on whether there are more artists to display
+    const viewMoreBtn = document.querySelector(".view-more-btn");
+    if (viewMoreBtn) {
+      if (startIndex + 2 >= artists.length) {
+        viewMoreBtn.style.display = "none";
+      } else {
+        viewMoreBtn.style.display = "block";
+      }
+    }
   }
   
   function handleNextBtn() {
@@ -104,10 +132,83 @@ const artists = [
       startIndex += 6;
       displayArtists();
     }
+    
+    // Toggle visibility of "View More" button based on whether there are more artists to display
+    const viewMoreBtn = document.querySelector(".view-more-btn");
+    if (viewMoreBtn) {
+      if (startIndex + 2 >= artists.length) {
+        viewMoreBtn.style.display = "none";
+      } else {
+        viewMoreBtn.style.display = "block";
+      }
+    }
+  }
+    
+    function displayArtists() {
+      artistsContainer.innerHTML = "";
+      let endIndex;
+      if (window.innerWidth <= 768) {
+        // For mobile devices, display only 2 artists
+        endIndex = startIndex + 2 > artists.length ? artists.length : startIndex + 2;
+      } else {
+        endIndex = startIndex + 6 > artists.length ? artists.length : startIndex + 6;
+      }
+      for (let i = startIndex; i < endIndex; i++) {
+        // code for creating and appending artist elements
+      }
+      
+    
+      // Add "View More" button if there are more artists to display
+      if (endIndex < artists.length) {
+        const viewMoreBtn = document.createElement("button");
+        viewMoreBtn.classList.add("view-more-btn");
+        viewMoreBtn.textContent = "View More";
+        viewMoreBtn.innerHTML += '<i class="fa fa-chevron-down"></i>';
+        viewMoreBtn.addEventListener("click", handleViewMoreBtn);
+        artistsContainer.appendChild(viewMoreBtn);
+      }
+                
+    for (let i = startIndex; i < endIndex; i++) {
+      const artist = artists[i];
+      const artistElement = document.createElement("div");
+      artistElement.classList.add("artist");
+      const portraitElement = document.createElement("img");
+      portraitElement.classList.add("portrait");
+      portraitElement.src = artist.portraitUrl;
+      portraitElement.alt = `${artist.name} Portrait`;
+      const infoElement = document.createElement("div");
+      infoElement.classList.add("info2");
+      const nameElement = document.createElement("h2");
+      nameElement.classList.add("name");
+      nameElement.textContent = artist.name;
+      const descriptionElement = document.createElement("p");
+      descriptionElement.classList.add("description");
+      descriptionElement.textContent = artist.description;
+      infoElement.appendChild(nameElement);
+      infoElement.appendChild(descriptionElement);
+      artistElement.appendChild(portraitElement);
+      artistElement.appendChild(infoElement);
+      artistsContainer.appendChild(artistElement);
+    }
+  }
+  
+  function handleViewMoreBtn() {
+    startIndex += 2;
+    displayArtists();
+    
+    // Hide "View More" button if all artists have been displayed
+    const viewMoreBtn = document.querySelector(".view-more-btn");
+    if (viewMoreBtn) {
+      if (startIndex + 2 >= artists.length) {
+        viewMoreBtn.style.display = "none";
+      }
+    }
   }
   
   prevBtn.addEventListener("click", handlePrevBtn);
   nextBtn.addEventListener("click", handleNextBtn);
-  
   displayArtists();
+
+  
+  
   
