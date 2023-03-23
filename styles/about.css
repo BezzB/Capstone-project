@@ -59,6 +59,18 @@
     align-items: center;
     max-height: 100%;
   }
+  .explanation {
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    align-content: center;
+  }
+
+  .logoigm1 img{
+    max-width: 30%;
+    height: auto;
+    margin-left: 30%;
+  }
 
 
 
