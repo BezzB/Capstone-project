@@ -72,8 +72,58 @@
     margin-left: 30%;
   }
 
+  .past-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pastEvents {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .viewPast {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .year2021, .year2022 {
+    background-image: url("path/to/image.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease-in-out;
+    filter: hue-rotate(45deg);
+  }
+  
+  .year2021:hover, .year2022:hover {
+    transform: scale(1.05);
+  }
+  
+  .year2021 h1, .year2022 h1 {
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .year2021{
+    
+    background-image: url("../images/Bestof2021_DefiningArtEvents.webp");
+    
+}
 
-
+.year2022{
+  
+  background-image: url("../images/End_Of_Year_Graphic_KB_Events-copy.jpg");
+  
+}
 
 
   .footer2 {

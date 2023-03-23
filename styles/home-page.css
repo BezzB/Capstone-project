@@ -58,17 +58,10 @@
 @media only screen and (min-width: 768px) {
   .home-page {
       height: 100%;
-      top: 0;
-      
+      top: 0;     
     
   }
-  
-  .theme {
-      max-width: 50%;
-      margin-top: 10%;
-      margin-left: 10%;
-      font-size: xx-large;
-  }
+ 
   
   .info {
       max-width: 50%;

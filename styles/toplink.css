@@ -56,27 +56,13 @@ header ul li a:hover {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  /* CSS rules for smaller screens */
+/* @media only screen and (max-width: 767px) {
+/*   
   header {
     padding: 0 5%;
     visibility: hidden;
   }
- 
+} */
+  
 
 /* media query for smaller screens */
-
-@media only screen and (max-width: 767px) {
-  header {
-    padding: 0 20px;
-  }
-  
-  header ul {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  header ul li {
-    margin: 10px 0;
-  }
-}
