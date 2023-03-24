@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Microverse/Capstone-project/.github"
+	},
+	{
+		"path": "../Microverse/Capstone-project/images"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Capstone-project",
+    "liveServer.settings.port": 5501
+  }
+}
