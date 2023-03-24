@@ -99,8 +99,8 @@ After you're finished please remove all the comments and instructions!
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://www.loom.com/share/007dd6ddbf704215a058b2b37b53eb4b)
-[Live Demo Link](https://bezzb.github.io/Portfolio/)
+- [Live Demo Link](https://bezzb.github.io/Capstone-project/)
+[Video Presentation](https://www.loom.com/share/4ad7b06b4479451e8a0cffc21d74a50b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
