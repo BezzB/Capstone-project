@@ -4,9 +4,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 /* base styles */
+
 /* Default styles for all screens */
+
 /* Default styles for all screen sizes */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('path/to/Lato-Regular.ttf') format('truetype');
+}
+
 body {
+  font-family: 'Lato', sans-serif;
   margin: 0;
 }
 
@@ -63,33 +73,34 @@ nav ul li a:hover {
 }
 
 nav ul div.campaign-name {
+  font-family: 'Lato', sans-serif;
   border-style: solid;
   border-radius: 10%;
-  border-color: #EC4327;
-  margin: 0 0 0 33px;
-  font-family: Lato;
-  color: #EC4327;
+  border-color: #ec4327;
+  margin: 0 0 0 33px; 
+  color: #ec4327;
   font-size: 14px;
   font-weight: 800;
   line-height: 17px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
 /* Media query for small screens */
 @media (max-width: 767px) {
-  header{
+  header {
     visibility: hidden;
   }
+
   nav {
     padding: 0 158px;
     margin-top: -19px;
   }
-  
+
   .navbar-logo {
     justify-content: center;
   }
-  
+
   nav ul {
     display: none;
     position: absolute;
@@ -100,12 +111,12 @@ nav ul div.campaign-name {
     text-align: center;
     z-index: 1;
   }
-  
+
   nav ul li {
     display: block;
     margin: 10px 0;
   }
-  
+
   .menu-btn {
     display: flex;
     flex-direction: column;
@@ -113,39 +124,37 @@ nav ul div.campaign-name {
     height: 24px;
     cursor: pointer;
     margin-left: -136px;
-    margin-right: 136px ;
+    margin-right: 136px;
   }
-  
+
   .btn-line {
     width: 24px;
     height: 2px;
     background-color: #333;
     transition: all 0.3s ease;
-    
   }
-  
+
   /* Rotate the first and the last line when the button is clicked */
   .menu-btn.active .btn-line:first-child {
     transform: rotate(45deg) translate(10px, 11px);
   }
-  
+
   .menu-btn.active .btn-line:last-child {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-  
+
   /* Hide the middle line when the button is clicked */
   .menu-btn.active .btn-line:nth-child(2) {
     opacity: 0;
   }
-  
 }
- 
+
 /* Media query for large screens */
 @media (min-width: 768px) {
   nav ul {
     display: flex;
   }
-  
+
   .hamburger {
     display: none;
   }

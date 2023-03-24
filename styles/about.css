@@ -1,161 +1,172 @@
 /* Center the headings and paragraphs */
-.headings{
-    display: flex;
-    flex-direction: column;
-    max-height: 100%;   
-    background-image: url("../images/background1.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-     background-size: cover;
-}
-.headings div.theme{
-    max-width: 80%;
-
-}
-.headings, .headings p {
-    text-align: center;
-  }
-  
-  /* Style the heading with an orange color */
-  .headings h1 {
-    color: #F75916;
-    margin-left: 8%;
-  }
-  
-  /* Style the info section */
-  .headings div.info {
-    
-    background-color: #F7F7F7;
-    max-width: 80%;
-  }
-  
-  .info p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the contact section */
-  .contact-me {
-    background-color: #F0F0F0;
-    padding: 20px;
-    margin-top: 5%;
-  }
-  
-  .contact-me p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-  
-  .contact-me a {
-    color: #F75916;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .logo-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-height: 100%;
-  }
-  .explanation {
-    display: flex;
-    max-width: 80%;
-    align-items: center;
-    align-content: center;
-  }
-
-  .logoigm1 img{
-    max-width: 30%;
-    height: auto;
-    margin-left: 30%;
-  }
-
-  .past-events {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .pastEvents {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .viewPast {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .year2021, .year2022 {
-    background-image: url("path/to/image.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
-    border-radius: 10px;
-    padding: 2rem;    
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease-in-out;
-    filter: hue-rotate(45deg);
-  }
-  
-  .year2021:hover, .year2022:hover {
-    transform: scale(1.05);
-  }
-  
-  .year2021 h1, .year2022 h1 {
-    margin-top: 0;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  }
-  
-  .year2021{
-    
-    background-image: url("../images/Bestof2021_DefiningArtEvents.webp");
-    
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('path/to/Lato-Regular.ttf') format('truetype');
 }
 
-.year2022{
-  
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  background-image: url("../images/background1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.headings div.theme {
+  max-width: 80%;
+}
+
+.headings,
+.headings p {
+  text-align: center;
+}
+
+/* Style the heading with an orange color */
+.headings h1 {
+  color: #f75916;
+  margin-left: 8%;
+}
+
+/* Style the info section */
+.headings div.info {
+  background-color: #f7f7f7;
+  max-width: 80%;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style the contact section */
+.contact-me {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 5%;
+}
+
+.contact-me p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.contact-me a {
+  color: #f75916;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+}
+
+.explanation {
+  display: flex;
+  max-width: 80%;
+  align-items: center;
+  align-content: center;
+}
+
+.logoigm1 img {
+  max-width: 30%;
+  height: auto;
+  margin-left: 30%;
+}
+
+.past-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pastEvents {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.viewPast {
+  display: flex;
+  justify-content: center;
+}
+
+.year2021,
+.year2022 {
+  background-image: url("path/to/image.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  filter: hue-rotate(45deg);
+}
+
+.year2021 h1,
+.year2022 h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.year2021 {
+  background-image: url("../images/Bestof2021_DefiningArtEvents.webp");
+}
+
+.year2022 {
   background-image: url("../images/End_Of_Year_Graphic_KB_Events-copy.jpg");
-  
 }
 
-
-  .footer2 {
-    display: flex;
-    flex-direction: row;
-    max-height: 100%;
-    background: #2E2E2E;
-
-
-  }
-  .footer2 p {
-   margin-top: 5%;
-   color: #F0F0F0;
-   margin-left: 5%;
-
-  }
-  .footer2 img {
-    margin-top: 1%;
-    max-width: 20%;
-    height: auto;
-    margin-left: 8%;
+.year2021:hover,
+.year2022:hover {
+  transform: scale(1.05);
 }
-  
+
+.footer2 {
+  display: flex;
+  flex-direction: row;
+  max-height: 100%;
+  background: #2e2e2e;
+}
+
+.footer2 p {
+  margin-top: 5%;
+  color: #f0f0f0;
+  margin-left: 5%;
+}
+
+.footer2 img {
+  margin-top: 1%;
+  max-width: 20%;
+  height: auto;
+  margin-left: 8%;
+}
+
 @media (max-width: 768px) {
   .viewPast {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    
   }
-  .year2021:before {
+
+  .year2021::before {
     content: "";
     position: absolute;
     top: 0;
@@ -165,7 +176,8 @@
     background-color: rgba(236, 106, 12, 0.548);
     z-index: 1;
   }
-  .year2022:before {
+
+  .year2022::before {
     content: "";
     position: absolute;
     top: 0;
@@ -175,19 +187,18 @@
     background-color: rgba(236, 106, 12, 0.548);
     z-index: 1;
   }
-  
+
   .viewPast > div {
     width: calc(69% - 10px);
     margin-bottom: 20px;
-    
-    
   }
-  .viewPast > div h1{
+
+  .viewPast > div h1 {
     display: flex;
-    justify-content:center;
-    color: #2E2E2E;
+    justify-content: center;
+    color: #2e2e2e;
   }
-  
+
   .footer2 p {
     margin-top: 15%;
     color: #070707;
@@ -200,14 +211,17 @@
     height: 10%;
     margin-left: 5%;
   }
-  .footer2{
-    background-color: #F0F0F0;
-    color: #2E2E2E;
+
+  .footer2 {
+    background-color: #f0f0f0;
+    color: #2e2e2e;
   }
-  .copyright{
+
+  .copyright {
     visibility: collapse;
   }
-  p.incBezz{
-    color: #2E2E2E;
+
+  p.incBezz {
+    color: #2e2e2e;
   }
 }
