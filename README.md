@@ -1,5 +1,5 @@
-# Setup-mobile-first
-HTML/CSS & JavaScript capstone project-Art Conference 
+# HTML/CSS & JavaScript capstone project-Art Conference 
+
 <a name="readme-top"></a>
 
 <!--
