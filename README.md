@@ -64,15 +64,15 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [setting up the mobile first project ] <a name="about-project"></a>
+# 📖 [Art Conference Page] <a name="about-project"></a>
 
 > Hello , This is a simple project shows how to create a portofolio.
 
-**[setting up the mobile first project ]** is a simple buil up demo project.
+**[HTML/CSS & JavaScript capstone project-Art Conference  ]** is a simple buil up demo project.
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with"> CSS</a>
 
-### Tech Stack <a name="tech-stack"></a>
+### Tech Stack <a name="tech-stack"> HTML and JavaScript</a>
 
 
 <details>
