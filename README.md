@@ -1,5 +1,5 @@
 # Setup-mobile-first
-setting up the mobile first project 
+HTML/CSS & JavaScript capstone project-Art Conference 
 <a name="readme-top"></a>
 
 <!--
@@ -89,8 +89,8 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 
-- **[Simple Site]**
-- **[Font used]**
+- **[The home page]**
+- **[The about page.]**
 -
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,9 +131,9 @@ In order to run this project you need:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Bezalell Barnet**
 
-- GitHub: [@bezzB]
+- GitHub: [https://github.com/BezzB/Capstone-project.git]
 - 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -175,7 +175,7 @@ If you like this please comment on it.
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank you my patner Mario and Abass for the help.
+I would like to thank Cindy Shin in Behance. For her creative design insprired this website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
